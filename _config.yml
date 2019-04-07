@@ -1,0 +1,7 @@
+# Site settings
+title: Las Adelitas
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://141homes.org" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown

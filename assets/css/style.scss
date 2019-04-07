@@ -5,14 +5,11 @@ body {
   height: 100vh;
   margin: 0;
   width: 100vw;
+  font-family: "Open Sans", sans-serif;
 }
 
 #home {
-  padding: 10px;
-
-  @media (min-width: 769px) {
-    padding: 20px;
-  }
+  padding: 20px;
 }
 
 .img-home {
@@ -20,21 +17,32 @@ body {
 }
 
 .content {
-  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1200px;
+  align-items: center;
+  max-width: 1000px;
   margin: 20px auto;
 }
 
-h1,
-.copy {
-  color: #FF6556;
-  font-family: "Open Sans", sans-serif;
+.content p {
+  font-size: 130%;
+  color: #333;
 }
 
 h1 {
+  color: #FF6556;
+  margin-top: 0;
   font-weight: bold;
   text-align: center;
+  font-size: 250%;
+}
+
+a {
+  color: #FF6556;
+
+  &:hover {
+    color: #cc5044;
+    text-decoration: none;
+  };
 }
