@@ -28,6 +28,20 @@ body {
 .content p {
   font-size: 130%;
   color: #333;
+
+  &.credit {
+    font-size: 80%;
+    color: #ccc;
+
+    a {
+      color: #ccc;
+
+      &:hover {
+        color: #999;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 h1 {
