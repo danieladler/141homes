@@ -29,6 +29,46 @@ img {
   margin: 20px auto;
 }
 
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+  }
+
+  &--flex-column {
+    flex-direction: column;
+  }
+
+  .col {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .col--6 {
+    flex: 1;
+
+    &:not(:first-child) {
+      margin: 20px 0 0 0;
+    }
+
+    @media (min-width: 769px) {
+      margin: 20px;
+      width: 100%;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
 .content p {
   font-size: 130%;
   color: #333;
@@ -78,4 +118,27 @@ a {
     color: #cc5044;
     text-decoration: none;
   }
+}
+
+.ctnr-copy {
+  margin: 40px 0;
+}
+
+.embed-container {
+  padding-bottom: 56.25%;
+  height: 0;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
