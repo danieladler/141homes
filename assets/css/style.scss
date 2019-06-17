@@ -124,6 +124,12 @@ a {
   margin: 40px 0;
 }
 
+.slick-slide {
+  @media (min-width: 480px) {
+    padding: 0 20px;
+  }
+}
+
 .embed-container {
   padding-bottom: 56.25%;
   height: 0;
