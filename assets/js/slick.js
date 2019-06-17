@@ -34,4 +34,9 @@ document.addEventListener("DOMContentLoaded", function() {
       // instead of a settings object
     ]
   });
+
+  $('.slideshow').slickLightbox({
+    src: 'src',
+    itemSelector: 'img'
+  });
 });
